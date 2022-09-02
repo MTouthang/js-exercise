@@ -21,4 +21,15 @@ let cyear = date.getFullYear();
 console.log(cyear);
 
 let numYr = cyear - 1970;
+let numSecDay = 24 * 60;
+let numHrInYear = 24 * 365;
+
+let allHr = numYr * numHrInYear;
+
+let allSec = allHr * numSecDay;
+
+console.log(numSecDay);
+console.log(numHrInYear);
 console.log(numYr);
+
+console.log(`Seconds elapsed from 1979 to 2022 - ${allSec} secs`);
